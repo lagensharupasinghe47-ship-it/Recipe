@@ -7,7 +7,27 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
-}      
+}
+.img_container {
+  border: 2px solid rgb(75 70 74);
+  border-radius: 0.5em;
+  padding: 20px 10px;
+  width: 500px;
+  font: 1.2em sans-serif;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img_container > * {
+  padding: 10px;
+  border: 2px solid rgb(95 97 110);
+  border-radius: 0.5em;
+
+  margin: 0 10px;
+  flex: 1 1 200px;
+}
+      
  .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -101,8 +121,24 @@
     transition: all 0.3s ease;
     text-align: center;
     position: relative;
-    z-index: 1;          /* video eka yatin enna */
+    z-index: 1;          
     margin-top: 100px;  
 
 
+}
+.navbar bg-body-tertiary{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    height: auto;
+}
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1000px; 
+    background-color: rgba(255, 255, 255, 0.5);
+    font-style: inherit;
+    color: black;
 }
